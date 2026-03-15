@@ -1,4 +1,5 @@
 extends Node2D
+ 
 var dice_roll 
 #bull's variables
 var bull_roll 

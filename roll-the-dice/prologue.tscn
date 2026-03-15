@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://rftk78ixkp5q"]
+
+[ext_resource type="PackedScene" path="res://prologue.tscn" id="1_ex3hv"]
+
+[node name="Prologue" unique_id=733380455 instance=ExtResource("1_ex3hv")]
