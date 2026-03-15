@@ -1,17 +1,17 @@
-[gd_scene format=3 uid="uid://bgyqf6i7g63xd"]
+[gd_scene load_steps=3 format=3 uid="uid://bgyqf6i7g63xd"]
 
 [ext_resource type="Script" uid="uid://ciqwilfn8chkg" path="res://gamble_mechanics.gd" id="1_jdve0"]
 [ext_resource type="Texture2D" uid="uid://cqfma0j2sw2j4" path="res://icon.svg" id="1_q8tat"]
 
-[node name="Gamble_mechanics" type="Node2D" unique_id=1784135908]
+[node name="Gamble_mechanics" type="Node2D"]
 position = Vector2(91, -8)
 script = ExtResource("1_jdve0")
 
-[node name="Player" type="Sprite2D" parent="." unique_id=2111937264]
+[node name="Player" type="Sprite2D" parent="."]
 position = Vector2(473, 245)
 texture = ExtResource("1_q8tat")
 
-[node name="Player_name" type="Label" parent="Player" unique_id=137396923]
+[node name="Player_name" type="Label" parent="Player"]
 offset_left = -21.0
 offset_top = 75.0
 offset_right = 19.0
@@ -19,11 +19,11 @@ offset_bottom = 100.0
 text = "You"
 metadata/_edit_use_anchors_ = true
 
-[node name="Bull" type="Sprite2D" parent="." unique_id=681997698]
+[node name="Bull" type="Sprite2D" parent="."]
 position = Vector2(807, 102)
 texture = ExtResource("1_q8tat")
 
-[node name="Bull_name" type="Label" parent="Bull" unique_id=196978396]
+[node name="Bull_name" type="Label" parent="Bull"]
 offset_left = -18.0
 offset_top = 73.0
 offset_right = 22.0
@@ -31,32 +31,32 @@ offset_bottom = 96.0
 text = "BULL"
 metadata/_edit_use_anchors_ = true
 
-[node name="Bull_vibe" type="Label" parent="Bull" unique_id=1066994932]
+[node name="Bull_vibe" type="Label" parent="Bull"]
 offset_left = -53.0
 offset_top = 97.0
 offset_right = -13.0
 offset_bottom = 121.0
 text = "Vibe:"
 
-[node name="Bull_roll" type="Label" parent="Bull" unique_id=231978125]
+[node name="Bull_roll" type="Label" parent="Bull"]
 offset_left = -48.0
 offset_top = 124.0
 offset_right = -8.0
 offset_bottom = 147.0
 text = "Roll:"
 
-[node name="Bull_status" type="Label" parent="Bull" unique_id=179439782]
+[node name="Bull_status" type="Label" parent="Bull"]
 offset_left = -64.0
 offset_top = 155.0
 offset_right = -10.0
 offset_bottom = 178.0
 text = "Status:"
 
-[node name="Snake" type="Sprite2D" parent="." unique_id=1380510899]
+[node name="Snake" type="Sprite2D" parent="."]
 position = Vector2(808, 387)
 texture = ExtResource("1_q8tat")
 
-[node name="Snake_name" type="Label" parent="Snake" unique_id=2050287337]
+[node name="Snake_name" type="Label" parent="Snake"]
 offset_left = -26.0
 offset_top = 73.0
 offset_right = 21.0
@@ -64,11 +64,11 @@ offset_bottom = 96.0
 text = "Snake"
 metadata/_edit_use_anchors_ = true
 
-[node name="Turtle" type="Sprite2D" parent="." unique_id=650142526]
+[node name="Turtle" type="Sprite2D" parent="."]
 position = Vector2(177, 396)
 texture = ExtResource("1_q8tat")
 
-[node name="Turtle_name" type="Label" parent="Turtle" unique_id=1970238012]
+[node name="Turtle_name" type="Label" parent="Turtle"]
 offset_left = -23.0
 offset_top = 66.0
 offset_right = 24.0
@@ -76,11 +76,11 @@ offset_bottom = 89.0
 text = "Turtle"
 metadata/_edit_use_anchors_ = true
 
-[node name="MS" type="Sprite2D" parent="." unique_id=252229693]
+[node name="MS" type="Sprite2D" parent="."]
 position = Vector2(170, 106)
 texture = ExtResource("1_q8tat")
 
-[node name="MS_name" type="Label" parent="MS" unique_id=2097906415]
+[node name="MS_name" type="Label" parent="MS"]
 offset_left = -75.0
 offset_top = 67.0
 offset_right = 82.0
@@ -88,44 +88,40 @@ offset_bottom = 90.0
 text = "Mysterious Stranger"
 metadata/_edit_use_anchors_ = true
 
-[node name="Roll_button" type="Button" parent="." unique_id=237329865]
+[node name="Roll_button" type="Button" parent="."]
 offset_left = 354.0
 offset_top = 444.0
 offset_right = 606.0
 offset_bottom = 489.0
 text = "ROLL"
 
-[node name="Fold_button" type="Button" parent="." unique_id=1106928084]
+[node name="Fold_button" type="Button" parent="."]
 offset_left = 200.0
 offset_top = 573.0
 offset_right = 454.0
 offset_bottom = 618.0
 text = "FOLD"
 
-[node name="All_in_button" type="Button" parent="." unique_id=688798199]
+[node name="All_in_button" type="Button" parent="."]
 offset_left = 505.0
 offset_top = 576.0
 offset_right = 749.0
 offset_bottom = 619.0
 text = "ALL IN"
 
-[node name="Cheat_button" type="Button" parent="." unique_id=1006425833]
+[node name="Cheat_button" type="Button" parent="."]
 offset_left = 788.0
 offset_top = 592.0
 offset_right = 1022.0
 offset_bottom = 633.0
 text = "CHEAT"
 
-[node name="Vibe_check_button" type="Button" parent="." unique_id=1504858721]
+[node name="Vibe_check_button" type="Button" parent="."]
 offset_left = -64.0
 offset_top = 599.0
 offset_right = 166.0
 offset_bottom = 642.0
 text = "VIBE CHECK"
-
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1867108963]
-offset_right = 40.0
-offset_bottom = 40.0
 
 [connection signal="pressed" from="Roll_button" to="." method="_on_roll_button_pressed"]
 [connection signal="pressed" from="Fold_button" to="." method="_on_fold_button_pressed"]
