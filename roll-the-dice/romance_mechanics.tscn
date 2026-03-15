@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cbug3ojbp6pjl"]
+
+[ext_resource type="Script" uid="uid://vukq5k4fruad" path="res://romance_mechanics.gd" id="1_pbebm"]
+[ext_resource type="Texture2D" uid="uid://cqfma0j2sw2j4" path="res://icon.svg" id="2_uc0at"]
+
+[node name="romance_mechanics" type="Node2D" unique_id=1775584143]
+script = ExtResource("1_pbebm")
+
+[node name="Bull" type="Sprite2D" parent="." unique_id=1283594873]
+position = Vector2(124, 362)
+texture = ExtResource("2_uc0at")
+
+[node name="Select_Bull" type="Button" parent="Bull" unique_id=1839615336]
+visible = false
+offset_left = -60.0
+offset_top = -62.0
+offset_right = 61.0
+offset_bottom = 59.0
+
+[node name="Snake" type="Sprite2D" parent="." unique_id=1581011868]
+position = Vector2(310, 173)
+texture = ExtResource("2_uc0at")
+
+[node name="Select_Snake" type="Button" parent="Snake" unique_id=1509779663]
+visible = false
+offset_left = -71.0
+offset_top = -67.0
+offset_right = 65.0
+offset_bottom = 69.0
+
+[node name="Dealer" type="Sprite2D" parent="." unique_id=303506863]
+position = Vector2(538, 177)
+texture = ExtResource("2_uc0at")
+
+[node name="Select_Dealer" type="Button" parent="Dealer" unique_id=1944711218]
+visible = false
+offset_left = -61.0
+offset_top = -58.0
+offset_right = 60.0
+offset_bottom = 63.0
+
+[node name="MS" type="Sprite2D" parent="." unique_id=1120757801]
+position = Vector2(1001, 358)
+texture = ExtResource("2_uc0at")
+
+[node name="Select_MS" type="Button" parent="MS" unique_id=1325685631]
+visible = false
+offset_left = -59.0
+offset_top = -61.0
+offset_right = 62.0
+offset_bottom = 60.0
+
+[node name="Turtle" type="Sprite2D" parent="." unique_id=1331887279]
+position = Vector2(772, 185)
+texture = ExtResource("2_uc0at")
+
+[node name="Select_Turtle" type="Button" parent="Turtle" unique_id=1562908912]
+visible = false
+offset_left = -60.0
+offset_top = -61.0
+offset_right = 61.0
+offset_bottom = 60.0
+
+[connection signal="pressed" from="Bull/Select_Bull" to="." method="characterSelect" binds= ["\"bull\""]]
+[connection signal="pressed" from="Snake/Select_Snake" to="." method="characterSelect" binds= ["\"snake\""]]
+[connection signal="pressed" from="Dealer/Select_Dealer" to="." method="characterSelect" binds= ["\"dealer\""]]
+[connection signal="pressed" from="MS/Select_MS" to="." method="characterSelect" binds= ["\"ms\""]]
+[connection signal="pressed" from="Turtle/Select_Turtle" to="." method="characterSelect" binds= ["\"turtle\""]]
