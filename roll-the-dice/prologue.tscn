@@ -1,5 +1,29 @@
-[gd_scene format=3 uid="uid://rftk78ixkp5q"]
+[gd_scene format=3 uid="uid://cufyjuciwo1tl"]
 
-[ext_resource type="PackedScene" path="res://prologue.tscn" id="1_ex3hv"]
+[ext_resource type="Script" uid="uid://5j2ftpdmqltl" path="res://prologue.gd" id="1_2o1rx"]
+[ext_resource type="PackedScene" uid="uid://8pswlkurrtu4" path="res://dialogue_box.tscn" id="1_ex3hv"]
 
-[node name="Prologue" unique_id=733380455 instance=ExtResource("1_ex3hv")]
+[node name="prologue" type="Node2D" unique_id=432148417]
+script = ExtResource("1_2o1rx")
+
+[node name="Background art" type="Sprite2D" parent="." unique_id=647186150]
+
+[node name="Dialogue Box" parent="." unique_id=794947454 instance=ExtResource("1_ex3hv")]
+
+[node name="Speaker" type="Label" parent="Dialogue Box" unique_id=1616614219]
+offset_left = -555.55554
+offset_top = -338.60052
+offset_right = -255.55554
+offset_bottom = -269.60052
+scale = Vector2(1, 2)
+theme_override_font_sizes/font_size = 50
+text = "Narrator"
+
+[node name="prologue_dialogue" type="Label" parent="." unique_id=1865388271]
+offset_left = 150.0
+offset_top = 425.0
+offset_right = 1000.0
+offset_bottom = 585.0
+theme_override_font_sizes/font_size = 25
+text = "My life is a lie"
+autowrap_mode = 3

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://den3e6eold2r5"]
+
+[ext_resource type="Script" uid="uid://c2o0r4ek8ltlm" path="res://credits_button.gd" id="1_v7yf7"]
+
+[node name="credits_button" type="Button" unique_id=431495439]
+offset_left = 474.0
+offset_top = 470.0
+offset_right = 731.0
+offset_bottom = 544.0
+text = "Credits"
+script = ExtResource("1_v7yf7")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

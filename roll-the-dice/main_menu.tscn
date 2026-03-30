@@ -1,5 +1,48 @@
-[gd_scene format=3 uid="uid://dw0r1csbbtqky"]
+[gd_scene format=3 uid="uid://b3acvmxmkgtg1"]
 
-[ext_resource type="PackedScene" path="res://main_menu.tscn" id="1_06t4h"]
+[ext_resource type="PackedScene" uid="uid://j4t0tsjm8g8t" path="res://start_button.tscn" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://dbt8gju2t5do5" path="res://ceiling.view.full.PNG" id="1_jix8l"]
+[ext_resource type="PackedScene" uid="uid://den3e6eold2r5" path="res://credits_button.tscn" id="2_jix8l"]
+[ext_resource type="PackedScene" uid="uid://rblh8s5cdhv6" path="res://quit_button.tscn" id="3_glbon"]
 
-[node name="Main Menu" unique_id=1252467000 instance=ExtResource("1_06t4h")]
+[node name="main_menu" type="Node2D" unique_id=199792736]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1141533705]
+position = Vector2(599, 312)
+texture = ExtResource("1_jix8l")
+
+[node name="Title" type="Label" parent="." unique_id=1106091539]
+offset_left = 268.0
+offset_top = 223.0
+offset_right = 910.0
+offset_bottom = 393.0
+theme_override_font_sizes/font_size = 100
+text = "All in on Love"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Title" unique_id=1858058182]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 140.0
+offset_right = 414.0
+offset_bottom = 163.0
+text = "(Demo Version)"
+horizontal_alignment = 1
+
+[node name="Start Button" parent="." unique_id=875088514 instance=ExtResource("1_fu7sn")]
+offset_left = 141.0
+offset_top = 496.0
+offset_right = 398.0
+offset_bottom = 570.0
+
+[node name="credits_button" parent="." unique_id=431495439 instance=ExtResource("2_jix8l")]
+offset_left = 472.0
+offset_top = 498.0
+offset_right = 729.0
+offset_bottom = 572.0
+
+[node name="quit_button" parent="." unique_id=302319465 instance=ExtResource("3_glbon")]
+offset_left = 799.0
+offset_top = 500.0
+offset_right = 1056.0
+offset_bottom = 574.0

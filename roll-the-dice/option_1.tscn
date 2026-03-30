@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c45nsa0gb0r61"]
+
+[node name="Option 1" type="Button" unique_id=1298477384]
+offset_right = 210.0
+offset_bottom = 61.0
+text = "Option 1"

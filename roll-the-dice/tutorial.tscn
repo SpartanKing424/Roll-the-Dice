@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://wrdxupfycg6r"]
+
+[ext_resource type="Texture2D" uid="uid://ckpxfio5cu4ps" path="res://bar.full.PNG" id="1_7n6eb"]
+[ext_resource type="Script" uid="uid://bk101co15wuwv" path="res://tutorial.gd" id="1_yb1ct"]
+[ext_resource type="Texture2D" uid="uid://c8xaumcyxfh6x" path="res://Big_Sheldon.png" id="3_hu44a"]
+[ext_resource type="Texture2D" uid="uid://cv3kn53x6dron" path="res://Valencio.png" id="4_0cr88"]
+[ext_resource type="Texture2D" uid="uid://6hi2nu2daf4r" path="res://Evelyn_judging.png" id="5_4t6hg"]
+[ext_resource type="PackedScene" uid="uid://8pswlkurrtu4" path="res://dialogue_box.tscn" id="6_7vrqn"]
+[ext_resource type="PackedScene" uid="uid://c45nsa0gb0r61" path="res://option_1.tscn" id="7_4t6hg"]
+[ext_resource type="PackedScene" uid="uid://tl8vqhyf082b" path="res://option_2.tscn" id="8_7vrqn"]
+
+[node name="Tutorial" type="Node2D" unique_id=1247765131]
+script = ExtResource("1_yb1ct")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=898812097]
+position = Vector2(577.00006, 329.00003)
+scale = Vector2(0.8949219, 0.8920139)
+texture = ExtResource("1_7n6eb")
+
+[node name="BigSheldon" type="Sprite2D" parent="." unique_id=602987244]
+visible = false
+position = Vector2(581, 325)
+texture = ExtResource("3_hu44a")
+
+[node name="Valencio" type="Sprite2D" parent="." unique_id=2124554065]
+visible = false
+position = Vector2(206, 331.625)
+scale = Vector2(0.788, 0.6967169)
+texture = ExtResource("4_0cr88")
+
+[node name="Evelyn" type="Sprite2D" parent="." unique_id=446402122]
+visible = false
+position = Vector2(951.00006, 340)
+scale = Vector2(0.73, 0.67717946)
+texture = ExtResource("5_4t6hg")
+
+[node name="Dialogue Box" parent="." unique_id=794947454 instance=ExtResource("6_7vrqn")]
+position = Vector2(606, 523)
+
+[node name="Speaker" type="Label" parent="." unique_id=646466503]
+offset_left = 150.0
+offset_top = 375.0
+offset_right = 320.0
+offset_bottom = 430.0
+theme_override_font_sizes/font_size = 40
+text = "Narrator"
+
+[node name="Dialogue" type="Label" parent="." unique_id=1449764280]
+offset_left = 150.0
+offset_top = 450.0
+offset_right = 1000.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
+
+[node name="Option 1" parent="." unique_id=1298477384 instance=ExtResource("7_4t6hg")]
+visible = false
+offset_left = 500.0
+offset_top = 175.0
+offset_right = 710.0
+offset_bottom = 236.0
+disabled = true
+
+[node name="Option 2" parent="." unique_id=379281542 instance=ExtResource("8_7vrqn")]
+visible = false
+offset_left = 500.0
+offset_top = 250.0
+offset_right = 710.0
+offset_bottom = 311.0
+disabled = true
+
+[connection signal="pressed" from="Option 1" to="." method="_on_option_1_pressed"]
+[connection signal="pressed" from="Option 2" to="." method="_on_option_2_pressed"]

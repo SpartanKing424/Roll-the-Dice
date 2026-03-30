@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://j4t0tsjm8g8t"]
+
+[ext_resource type="Script" uid="uid://jmfnqiu22ww4" path="res://start_button.gd" id="1_5lyk3"]
+
+[node name="Start Button" type="Button" unique_id=875088514]
+offset_left = 471.0
+offset_top = 434.0
+offset_right = 728.0
+offset_bottom = 508.0
+text = "Start Game"
+script = ExtResource("1_5lyk3")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

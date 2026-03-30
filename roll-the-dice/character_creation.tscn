@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://iwiawa6yym1u"]
+
+[ext_resource type="Script" uid="uid://00dk34vsfbh8" path="res://character_creator.gd" id="1_akliv"]
+[ext_resource type="Texture2D" uid="uid://bnhbwga42hwsu" path="res://Divorce.png" id="2_855gl"]
+
+[node name="character_creation" type="Node2D" unique_id=505246860]
+script = ExtResource("1_akliv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1872684880]
+position = Vector2(532, 324.00003)
+scale = Vector2(0.7250001, 0.65166676)
+texture = ExtResource("2_855gl")
+
+[node name="about_bold" type="Label" parent="." unique_id=3683718]
+offset_left = 310.0
+offset_top = 215.0
+offset_right = 410.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0.0002454828, 0.00024548278, 0.00024548278, 1)
+text = "Take action, intimidate"
+
+[node name="Signature" type="TextEdit" parent="." unique_id=353453430]
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 650.0
+offset_bottom = 530.0
+placeholder_text = "Player Name"
+
+[node name="Boldness" type="Label" parent="." unique_id=1559369713]
+offset_left = 465.0
+offset_top = 175.0
+offset_right = 527.0
+offset_bottom = 218.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Incompetence" type="Label" parent="." unique_id=954803205]
+offset_left = 530.0
+offset_top = 240.0
+offset_right = 592.0
+offset_bottom = 283.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Insight" type="Label" parent="." unique_id=1869682479]
+offset_left = 440.0
+offset_top = 305.0
+offset_right = 502.0
+offset_bottom = 348.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sleight" type="Label" parent="." unique_id=230206369]
+offset_left = 440.0
+offset_top = 365.0
+offset_right = 502.0
+offset_bottom = 408.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bold_up" type="Button" parent="." unique_id=635800181]
+offset_left = 560.0
+offset_top = 180.0
+offset_right = 616.0
+offset_bottom = 228.0
+text = "+"
+
+[node name="Incomp_up" type="Button" parent="." unique_id=1130052722]
+offset_left = 620.0
+offset_top = 240.0
+offset_right = 676.0
+offset_bottom = 288.0
+text = "+"
+
+[node name="Insight_up" type="Button" parent="." unique_id=1234160778]
+offset_left = 550.0
+offset_top = 300.0
+offset_right = 606.0
+offset_bottom = 348.0
+text = "+"
+
+[node name="Sleight_up" type="Button" parent="." unique_id=127020991]
+offset_left = 550.0
+offset_top = 360.0
+offset_right = 606.0
+offset_bottom = 408.0
+text = "+"
+
+[node name="Sleight_down" type="Button" parent="." unique_id=886125278]
+offset_left = 620.0
+offset_top = 360.0
+offset_right = 676.0
+offset_bottom = 408.0
+text = "-"
+
+[node name="Insight_down" type="Button" parent="." unique_id=398925689]
+offset_left = 620.0
+offset_top = 300.0
+offset_right = 676.0
+offset_bottom = 348.0
+text = "-"
+
+[node name="Bold_down" type="Button" parent="." unique_id=1016029098]
+offset_left = 630.0
+offset_top = 180.0
+offset_right = 686.0
+offset_bottom = 228.0
+text = "-"
+
+[node name="Incomp_down" type="Button" parent="." unique_id=1711346055]
+offset_left = 690.0
+offset_top = 240.0
+offset_right = 746.0
+offset_bottom = 288.0
+text = "-"
+
+[node name="about_incomp" type="Label" parent="." unique_id=1302033588]
+offset_left = 310.0
+offset_top = 275.0
+offset_right = 488.0
+offset_bottom = 305.0
+theme_override_colors/font_color = Color(0.0002454828, 0.00024548278, 0.00024548278, 1)
+text = "Be a failure"
+
+[node name="about_insight" type="Label" parent="." unique_id=125598068]
+offset_left = 310.0
+offset_top = 335.0
+offset_right = 425.0
+offset_bottom = 365.0
+theme_override_colors/font_color = Color(0.0002454828, 0.00024548278, 0.00024548278, 1)
+text = "Read the room"
+
+[node name="about_bold2" type="Label" parent="." unique_id=1937761319]
+offset_left = 310.0
+offset_top = 395.0
+offset_right = 446.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0.0002454828, 0.00024548278, 0.00024548278, 1)
+text = "Lie, cheat, & steal"
+
+[node name="Continue" type="Label" parent="." unique_id=422556216]
+offset_left = 400.0
+offset_top = 550.0
+offset_right = 638.0
+offset_bottom = 573.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Press Enter or left click to move on"
+
+[connection signal="pressed" from="Bold_up" to="." method="_on_bold_up_pressed"]
+[connection signal="pressed" from="Incomp_up" to="." method="_on_incomp_up_pressed"]
+[connection signal="pressed" from="Insight_up" to="." method="_on_insight_up_pressed"]
+[connection signal="pressed" from="Sleight_up" to="." method="_on_sleight_up_pressed"]
+[connection signal="pressed" from="Sleight_down" to="." method="_on_sleight_down_pressed"]
+[connection signal="pressed" from="Insight_down" to="." method="_on_insight_down_pressed"]
+[connection signal="pressed" from="Bold_down" to="." method="_on_bold_down_pressed"]
+[connection signal="pressed" from="Incomp_down" to="." method="_on_incomp_down_pressed"]
