@@ -1,3 +1,28 @@
 [gd_scene format=3 uid="uid://c7ij0r3yk7aup"]
 
+[ext_resource type="Script" uid="uid://6llxgolcyqd6" path="res://main_menu_button.gd" id="1_nm7lk"]
+
 [node name="Credits" type="Node2D" unique_id=1485898533]
+
+[node name="Label" type="Label" parent="." unique_id=1250790803]
+offset_left = 153.0
+offset_top = 75.0
+offset_right = 958.0
+offset_bottom = 372.0
+theme_override_font_sizes/font_size = 30
+text = "Creative Director/Producer: Gabriel Young
+Writers: Evan Forjan, Wilson Mendoza
+Character Artist: Vaughn Ludwig
+Background Artist: Obaapa Asante
+Music(Coming Soon!): Willa Magland
+Programmers: Gabriel Young, Andrew Shaffer, Luke Bonniwell"
+
+[node name="Main_Menu_Button" type="Button" parent="." unique_id=501046565]
+offset_left = 834.0
+offset_top = 157.0
+offset_right = 1013.0
+offset_bottom = 203.0
+text = "Main Menu"
+script = ExtResource("1_nm7lk")
+
+[connection signal="pressed" from="Main_Menu_Button" to="Main_Menu_Button" method="_on_pressed"]

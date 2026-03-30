@@ -1,10 +1,5 @@
-extends Node
-var player_incompetence = 0
-var player_sleight = 0
-var player_boldness = 0
-var player_insight = 0
-var player_name
-var money = 1
+extends Button
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,3 +9,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")
+	pass # Replace with function body.

@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bgyqf6i7g63xd"]
 
 [ext_resource type="Script" uid="uid://ciqwilfn8chkg" path="res://gamble_mechanics.gd" id="1_jdve0"]
-[ext_resource type="Texture2D" uid="uid://cqfma0j2sw2j4" path="res://icon.svg" id="1_q8tat"]
 [ext_resource type="Texture2D" uid="uid://dbt8gju2t5do5" path="res://ceiling.view.full.PNG" id="2_ddp2s"]
+[ext_resource type="Texture2D" uid="uid://dspu4jvf00dlv" path="res://Valencio Gambling Icon.png" id="3_acktx"]
+[ext_resource type="Texture2D" uid="uid://dc8gcd454o8te" path="res://Evelyn Gambling Icon.png" id="4_acktx"]
+[ext_resource type="Texture2D" uid="uid://inrdxqhlg87m" path="res://Sheldon Gambling Icon.png" id="5_pa42o"]
 
 [node name="Gamble_mechanics" type="Node2D" unique_id=1784135908]
 position = Vector2(91, -8)
@@ -14,102 +16,19 @@ scale = Vector2(0.91054696, 0.91805553)
 texture = ExtResource("2_ddp2s")
 
 [node name="Bull" type="Sprite2D" parent="." unique_id=681997698]
-position = Vector2(2, 306)
-texture = ExtResource("1_q8tat")
-
-[node name="Bull_name" type="Label" parent="Bull" unique_id=196978396]
-offset_left = -46.0
-offset_top = 75.0
-offset_right = 33.0
-offset_bottom = 98.0
-text = "VALENCIO"
-
-[node name="Bull_vibe" type="Label" parent="Bull" unique_id=1066994932]
-offset_left = -68.0
-offset_top = 97.0
-offset_right = -28.0
-offset_bottom = 121.0
-text = "Vibe:"
-
-[node name="Bull_roll" type="Label" parent="Bull" unique_id=231978125]
-offset_left = -63.0
-offset_top = 124.0
-offset_right = -23.0
-offset_bottom = 147.0
-text = "Roll:"
-
-[node name="Bull_status" type="Label" parent="Bull" unique_id=179439782]
-offset_left = -79.0
-offset_top = 155.0
-offset_right = -25.0
-offset_bottom = 178.0
-text = "Status:"
+position = Vector2(3, 315)
+scale = Vector2(0.34270832, 0.35416666)
+texture = ExtResource("3_acktx")
 
 [node name="Snake" type="Sprite2D" parent="." unique_id=1380510899]
-position = Vector2(970, 301)
-texture = ExtResource("1_q8tat")
-
-[node name="Snake_name" type="Label" parent="Snake" unique_id=2050287337]
-offset_left = -26.0
-offset_top = 73.0
-offset_right = 21.0
-offset_bottom = 96.0
-text = "EVELYN"
-metadata/_edit_use_anchors_ = true
-
-[node name="Snake_vibe" type="Label" parent="Snake" unique_id=1633959333]
-offset_left = -70.0
-offset_top = 99.0
-offset_right = -30.0
-offset_bottom = 123.0
-text = "Vibe:"
-
-[node name="Snake_roll" type="Label" parent="Snake" unique_id=407274797]
-offset_left = -65.0
-offset_top = 126.0
-offset_right = -25.0
-offset_bottom = 149.0
-text = "Roll:"
-
-[node name="Snake_status" type="Label" parent="Snake" unique_id=933478381]
-offset_left = -81.0
-offset_top = 157.0
-offset_right = -27.0
-offset_bottom = 180.0
-text = "Status:"
+position = Vector2(972, 314.00003)
+scale = Vector2(0.40052086, 0.37361112)
+texture = ExtResource("4_acktx")
 
 [node name="Turtle" type="Sprite2D" parent="." unique_id=650142526]
-position = Vector2(479, 80)
-texture = ExtResource("1_q8tat")
-
-[node name="Turtle_name" type="Label" parent="Turtle" unique_id=1970238012]
-offset_left = -49.0
-offset_top = 68.0
-offset_right = 58.0
-offset_bottom = 91.0
-text = "BIG SHELDON"
-metadata/_edit_use_anchors_ = true
-
-[node name="Turtle_vibe" type="Label" parent="Turtle" unique_id=721351450]
-offset_left = -80.0
-offset_top = 90.0
-offset_right = -40.0
-offset_bottom = 114.0
-text = "Vibe:"
-
-[node name="Turtle_roll" type="Label" parent="Turtle" unique_id=471556328]
-offset_left = -75.0
-offset_top = 117.0
-offset_right = -35.0
-offset_bottom = 140.0
-text = "Roll:"
-
-[node name="Turtle_status" type="Label" parent="Turtle" unique_id=514843517]
-offset_left = -91.0
-offset_top = 148.0
-offset_right = -37.0
-offset_bottom = 171.0
-text = "Status:"
+position = Vector2(476, 76)
+scale = Vector2(0.37968752, 0.43124998)
+texture = ExtResource("5_pa42o")
 
 [node name="Roll_button" type="Button" parent="." unique_id=237329865]
 offset_left = 358.0
@@ -154,5 +73,100 @@ offset_bottom = 40.0
 offset_right = 40.0
 offset_bottom = 23.0
 
+[node name="Continue_prompt" type="Label" parent="." unique_id=2067691049]
+visible = false
+offset_left = 283.0
+offset_top = 315.0
+offset_right = 661.0
+offset_bottom = 338.0
+text = "Round Over, press Enter or Left Click to Continue"
+
+[node name="Bull_name" type="Label" parent="." unique_id=196978396]
+offset_left = -44.0
+offset_top = 381.0
+offset_right = 35.0
+offset_bottom = 404.0
+text = "VALENCIO"
+
+[node name="Bull_vibe" type="Label" parent="." unique_id=1066994932]
+offset_left = -66.0
+offset_top = 403.0
+offset_right = -26.0
+offset_bottom = 427.0
+text = "Vibe:"
+
+[node name="Bull_roll" type="Label" parent="." unique_id=231978125]
+offset_left = -61.0
+offset_top = 430.0
+offset_right = -21.0
+offset_bottom = 453.0
+text = "Roll:"
+
+[node name="Bull_status" type="Label" parent="." unique_id=179439782]
+offset_left = -77.0
+offset_top = 461.0
+offset_right = -23.0
+offset_bottom = 484.0
+text = "Status:"
+
+[node name="Turtle_name" type="Label" parent="." unique_id=1970238012]
+offset_left = 430.0
+offset_top = 148.0
+offset_right = 537.0
+offset_bottom = 171.0
+text = "BIG SHELDON"
+
+[node name="Turtle_vibe" type="Label" parent="." unique_id=721351450]
+offset_left = 399.0
+offset_top = 170.0
+offset_right = 439.0
+offset_bottom = 194.0
+text = "Vibe:"
+
+[node name="Turtle_roll" type="Label" parent="." unique_id=471556328]
+offset_left = 404.0
+offset_top = 197.0
+offset_right = 444.0
+offset_bottom = 220.0
+text = "Roll:"
+
+[node name="Turtle_status" type="Label" parent="." unique_id=514843517]
+offset_left = 388.0
+offset_top = 228.0
+offset_right = 442.0
+offset_bottom = 251.0
+text = "Status:"
+
+[node name="Snake_name" type="Label" parent="." unique_id=2050287337]
+offset_left = 944.0
+offset_top = 374.0
+offset_right = 1003.0
+offset_bottom = 397.0
+text = "EVELYN"
+
+[node name="Snake_vibe" type="Label" parent="." unique_id=1633959333]
+offset_left = 900.0
+offset_top = 400.0
+offset_right = 940.0
+offset_bottom = 424.0
+text = "Vibe:"
+
+[node name="Snake_roll" type="Label" parent="." unique_id=407274797]
+offset_left = 905.0
+offset_top = 427.0
+offset_right = 945.0
+offset_bottom = 450.0
+text = "Roll:"
+
+[node name="Snake_status" type="Label" parent="." unique_id=933478381]
+offset_left = 889.0
+offset_top = 458.0
+offset_right = 943.0
+offset_bottom = 481.0
+text = "Status:"
+
 [connection signal="pressed" from="Roll_button" to="." method="_on_roll_button_pressed"]
 [connection signal="pressed" from="Fold_button" to="." method="_on_fold_button_pressed"]
+[connection signal="pressed" from="All_in_button" to="." method="_on_all_in_button_pressed"]
+[connection signal="pressed" from="Cheat_button" to="." method="_on_cheat_button_pressed"]
+[connection signal="pressed" from="Vibe_check_button" to="." method="_on_vibe_check_button_pressed"]

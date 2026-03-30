@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c4pr836jcx6e0"]
+
+[ext_resource type="PackedScene" uid="uid://rblh8s5cdhv6" path="res://quit_button.tscn" id="1_w0wms"]
+[ext_resource type="PackedScene" uid="uid://den3e6eold2r5" path="res://credits_button.tscn" id="2_04gjf"]
+[ext_resource type="PackedScene" uid="uid://j4t0tsjm8g8t" path="res://start_button.tscn" id="3_5bq3g"]
+
+[node name="caught_cheating_ending" type="Node2D" unique_id=1993607128]
+
+[node name="Label" type="Label" parent="." unique_id=725165136]
+offset_left = -21.0
+offset_top = 145.0
+offset_right = 1132.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 80
+text = "Thanks For Playing!!
+- The Team
+"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=998085296]
+offset_left = 112.0
+offset_top = 89.0
+offset_right = 975.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 40
+text = "You got caught cheating... IN THE DEMO?! R.I.P."
+
+[node name="quit_button" parent="." unique_id=302319465 instance=ExtResource("1_w0wms")]
+offset_left = 791.0
+offset_top = 380.0
+offset_right = 1048.0
+offset_bottom = 454.0
+
+[node name="credits_button" parent="." unique_id=431495439 instance=ExtResource("2_04gjf")]
+offset_left = 465.0
+offset_top = 380.0
+offset_right = 722.0
+offset_bottom = 454.0
+
+[node name="Start Button" parent="." unique_id=875088514 instance=ExtResource("3_5bq3g")]
+offset_left = 135.0
+offset_top = 380.0
+offset_right = 392.0
+offset_bottom = 454.0
+text = "Play Again?"

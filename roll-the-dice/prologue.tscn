@@ -2,11 +2,15 @@
 
 [ext_resource type="Script" uid="uid://5j2ftpdmqltl" path="res://prologue.gd" id="1_2o1rx"]
 [ext_resource type="PackedScene" uid="uid://8pswlkurrtu4" path="res://dialogue_box.tscn" id="1_ex3hv"]
+[ext_resource type="Texture2D" uid="uid://b8avawreb42uy" path="res://Divorce (2).png" id="2_orjk5"]
 
 [node name="prologue" type="Node2D" unique_id=432148417]
 script = ExtResource("1_2o1rx")
 
 [node name="Background art" type="Sprite2D" parent="." unique_id=647186150]
+position = Vector2(575, 333.00003)
+scale = Vector2(2.9792747, 2.1265826)
+texture = ExtResource("2_orjk5")
 
 [node name="Dialogue Box" parent="." unique_id=794947454 instance=ExtResource("1_ex3hv")]
 

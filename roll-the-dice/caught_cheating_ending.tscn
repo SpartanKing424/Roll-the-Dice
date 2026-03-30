@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://buavtup8mryry"]
+
+[ext_resource type="PackedScene" uid="uid://c4pr836jcx6e0" path="res://Cheater_Ending.tscn" id="1_322av"]
+
+[node name="caught_cheating_ending" unique_id=1993607128 instance=ExtResource("1_322av")]
+
+[node name="Label2" parent="." index="1" unique_id=998085296]
+visible = false
