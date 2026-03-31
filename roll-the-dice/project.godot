@@ -25,6 +25,7 @@ Globals="*uid://qhxi3kwfb08j"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

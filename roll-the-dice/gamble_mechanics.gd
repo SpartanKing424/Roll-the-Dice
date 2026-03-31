@@ -5,17 +5,17 @@ var dice_roll
 var bull_roll 
 var snake_roll
 var turtle_roll
-@onready var bull_vibe = get_node("Bull/Bull_vibe") 
-@onready var what_bull_rolled = get_node("Bull/Bull_roll")
-@onready var bull_status = get_node("Bull/Bull_status")
+@onready var bull_vibe = get_node("Bull_vibe") 
+@onready var what_bull_rolled = get_node("Bull_roll")
+@onready var bull_status = get_node("Bull_status")
 
-@onready var snake_vibe = get_node("Snake/Snake_vibe")
-@onready var what_snake_rolled = get_node("Snake/Snake_roll")
-@onready var snake_status =get_node("Snake/Snake_status")
+@onready var snake_vibe = get_node("Snake_vibe")
+@onready var what_snake_rolled = get_node("Snake_roll")
+@onready var snake_status =get_node("Snake_status")
 
-@onready var turtle_vibe = get_node("Turtle/Turtle_vibe")
-@onready var what_turtle_rolled = get_node("Turtle/Turtle_roll")
-@onready var turtle_status = get_node("Turtle/Turtle_status")
+@onready var turtle_vibe = get_node("Turtle_vibe")
+@onready var what_turtle_rolled = get_node("Turtle_roll")
+@onready var turtle_status = get_node("Turtle_status")
 
 
 #player stat variables
@@ -63,9 +63,11 @@ func _process(delta: float) -> void:
 		vibe_check.disabled = true
 		roll.disabled = true
 		continue_prompt.visible = true
-		if Input.is_action_just_pressed("Continue"):
-			get_tree().change_scene_to_file("res://ending.tscn")
-	
+	if Input.is_action_just_pressed("Continue"):
+		if round_over == true:
+			print("moving on")
+			get_tree().change_scene_to_file("res://caught_cheating_ending.tscn")
+		
 	pass
 
 
@@ -221,7 +223,7 @@ func _on_cheat_button_pressed() -> void:
 	cheat.disabled = true
 	allin_bonus -= 1
 	if cheat_roll <= 5:
-		get_tree().change_scene_to_file("res://ending.tscn")
+		get_tree().change_scene_to_file("res://Cheater_Ending.tscn")
 	if cheat_roll >= 6 and cheat_roll <= 7:
 		dice_roll = 14
 	if cheat_roll >= 8 and cheat_roll <= 9:
